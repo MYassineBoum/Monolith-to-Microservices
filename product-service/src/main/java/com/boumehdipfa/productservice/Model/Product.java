@@ -1,19 +1,17 @@
 package com.boumehdipfa.productservice.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 @Table(name = "products")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
+@Entity
 public class Product {
 
     @Id
