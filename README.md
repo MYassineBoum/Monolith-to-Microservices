@@ -14,9 +14,9 @@ Order service checks if the ordered products are in the inventory, thus calling 
 <br/>
 ## 3 Patterns spotted
 <ul>
-  <li>Microservice Per Database<li/>
-  <li>API Gateway<li/>
-  <li>Circuit Breaker<li/>
-<ul/>
+  <li>Microservice Per Database</li>
+  <li>API Gateway</li>
+  <li>Circuit Breaker</li>
+</ul>
 
 
