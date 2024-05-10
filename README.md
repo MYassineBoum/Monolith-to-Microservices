@@ -1,5 +1,5 @@
 ﻿# Monolith-to-Microservices
-PFA Project : Migrating a monolithic application to a microservices architecture.
+End Of Year Project (PFA) : Migrating a monolithic application to a microservices architecture.
 
 Clients can place orders to order service.
 <br/>
