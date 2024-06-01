@@ -3,8 +3,8 @@ package com.boumehdipfa.orderservice.Controller;
 import com.boumehdipfa.orderservice.DTO.OrderRequest;
 import com.boumehdipfa.orderservice.DTO.OrderResponse;
 import com.boumehdipfa.orderservice.Service.OrderService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,13 +17,19 @@ public class OrderController {
     private final OrderService orderService;
 
     @PostMapping("/place")
-    public void placeOrder(@RequestBody OrderRequest orderRequest) {
+    @CircuitBreaker(name="stock-service", fallbackMethod = "fallbackMethod")
+    public String placeOrder(@RequestBody OrderRequest orderRequest) {
         orderService.placeOrder(orderRequest);
+        return "Order placed successfully !";
     }
 
     @GetMapping("/getAll")
     public List<OrderResponse> listOrders() {
         return orderService.listOrders();
+    }
+
+    public String fallbackMethod(OrderRequest orderRequest, RuntimeException runtimeException) {
+        return "Something went wrong while calling stock service !";
     }
 
 }
