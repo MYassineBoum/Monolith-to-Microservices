@@ -9,7 +9,7 @@ Order service checks if the ordered products are in the inventory, thus calling 
 <br/>
 <br/>
 ## System Design
-Coming ...
+![sys_design_MonoToMic](https://github.com/MYassineBoum/Monolith-to-Microservices/assets/115194839/ede6812c-fb0e-4f63-ba4f-8cc790d895a9)
 <br/>
 <br/>
 ## 3 Patterns spotted
