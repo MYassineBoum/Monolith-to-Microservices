@@ -1,21 +1,18 @@
-package com.boumehdipfa.orderservice.DTO;
+package com.boumehdipfa.stockservice.DTO;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class ItemsTotalRequest {
+public class StockResponse {
 
-    private Long id;
     private Long stockId;
-    private BigDecimal totalPrice;
-    private Integer quantity;
+    private boolean isAvailable;
 
 }

@@ -1,4 +1,4 @@
-package com.boumehdipfa.orderservice.Model;
+package com.boumehdipfa.stockservice.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,19 +8,17 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Table(name = "total_items")
+@Table(name = "stock")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
 @Entity
-public class ItemsTotal {
+public class Stock {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     private Long stockId;
-    private BigDecimal totalPrice;
     private Integer quantity;
 
 }
