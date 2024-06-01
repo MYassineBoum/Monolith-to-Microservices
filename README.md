@@ -8,8 +8,8 @@ Producers can manage their products via product service.
 Order service checks if the ordered products are in the inventory, thus calling the inventory service. [Inter Service Communication]
 <br/>
 <br/>
-## System Design
-![sd_mTom](https://github.com/MYassineBoum/Monolith-to-Microservices/assets/115194839/ff0def07-73af-4ea7-acd1-258c8e405214)
+## System 
+![Diagramme sans nom drawio (1)](https://github.com/MYassineBoum/Monolith-to-Microservices/assets/115194839/8a48d418-adb2-4176-9cba-32532a9103d1)
 <br/>
 <br/>
 ## 3 Patterns spotted
