@@ -1,7 +1,7 @@
 ﻿# Monolith-to-Microservices
-PFA Project : Migrating a monolithic application to a microservices architecture.
+End Of Year Project (PFA) : Migrating a monolithic application to a microservices architecture.
 
-Clients can place order to order service.
+Clients can place orders to order service.
 <br/>
 Producers can manage their products via product service.
 <br/>
@@ -9,7 +9,7 @@ Order service checks if the ordered products are in the inventory, thus calling 
 <br/>
 <br/>
 ## System Design
-![system_design_pfa](https://github.com/MYassineBoum/Monolith-to-Microservices/assets/115194839/25ba1ec8-3e66-4297-975d-5fca75370f57)
+Coming ...
 <br/>
 <br/>
 ## 3 Patterns spotted
