@@ -5,7 +5,7 @@ Clients can place orders to order service.
 <br/>
 Producers can manage their products via product service.
 <br/>
-Order service checks if the ordered products are in the inventory, thus calling the inventory service. [Inter Service Communication]
+Order service checks if the ordered products are in the inventory, thus calling the stock service. [Inter Service Communication]
 <br/>
 <br/>
 ## System 
